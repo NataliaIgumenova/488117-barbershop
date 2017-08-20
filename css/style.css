@@ -1,0 +1,26 @@
+body{
+    font-size:14px;
+    line-height: 24px;
+    color: black;
+    font-weight: normal;
+    font-family: PT Sans Narrow Bold, Myriad Pro ;
+    
+}
+
+h1{
+    font-size:30px;
+    line-height: 42px;
+    color: black;
+    font-weight: normal;
+    font-family: PT Sans Narrow Bold, Myriad Pro;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size:14px;
+    line-height: 18px;
+    color: black;
+    font-weight: normal;
+    font-family: PT Sans Narrow Bold, Myriad Pro;
+    text-transform: uppercase;
+}
