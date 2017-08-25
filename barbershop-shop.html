@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>Барбершоп каталог</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
-        <header class="header-page containet">
+        <header class="header-page">
             <div class="container">    
-                <nav class="header-nav">
+                <nav class="header-navigation">
                     <a class="header-logo" href="index.html">
-                        <img src="img/logo.png" alt="Главная" width="111" height="24">
+                        <img src="img/logo.svg" alt="Главная" width="111" height="24">
                     </a>
-                    <ul class="header-nav">
+                    <ul>
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Прайс лист</a></li>
@@ -32,7 +33,7 @@
             <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="barbershop-shop.html">Магазин</a></li>                   
-                <li class="navigation-main" href="#">Средства для ухода</li>
+                <li class="breadcrumbs-current">Средства для ухода</li>
             </ul>
             <div class="filters-catalog">
                 <section class="filters">
@@ -190,7 +191,7 @@
 
                     <ul class="pagination-list">
                         <li class="pagination-item"><a href="#">1</a></li>
-                        <li class="pagination-item"><a>2</a></li>
+                        <li class="pagination-item pagination-item-current"><a>2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
                         <li class="pagination-item"><a href="#">4</a></li>
                     </ul>
@@ -198,7 +199,7 @@
             </div>
     </main>
         
-        <footer>
+        <footer class="footer-page">
             <p>
                 Барбершоп "Бородинский"<br>
                 Адрес: г.Санкт-Петербург, ул. Б. Конюшенная, д. 9/18 <br>
@@ -206,20 +207,20 @@
                 Телефон: +7(495)666-02-66
             </p>
             <div class="footer-social">
-                <b>Давайте жружить</b>
+                <b>Давайте жружить!</b>
                 <ul>
                     <li><a class="social-battom" href="#">Вконтакте</a></li>
                     <li><a class="social-battom" href="#">Фэйсбук</a></li>
                     <li><a class="social-battom" href="#">Инстаграм</a></li>
                 </ul>
             </div>
-            <p class="footer-copiright">
-                <b>Разработано:</b><a class="batton" href="https://echo.htmlacademia.ru">HTMLAcademy.ru</a>
+            <p class="footer-copyright">
+                <b>Разработано:</b><a class="button" href="https://echo.htmlacademia.ru">HTMLAcademy.ru</a>
             </p>
         </footer>
 
-        <section class="modal madal-login">
-            <h2>Личный кабинет</h2>
+        <section class="modal madal-login ">
+            <h2 class="title-page">Личный кабинет</h2>
             <p>Введите свой логин и пароль</p>
             <form class="login-form" action="https://echo.htmlacademia.ru" method="post">
                 <p>
