@@ -4,7 +4,7 @@ body {
 
     font-size: 14px;
     line-height: 1.7;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     font-family: "PT Sans Narrow", Arial, sans-serif;
     text-transform: uppercase; 
@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-li {
+.list li{
     list-style: none;
 }
 
@@ -31,11 +31,17 @@ li {
 .header-page a:hover,
 .header-page a:focus {
     background-color: #242424;
+    transition: 0.25s;
 }
 
-main,
+.main-content,
 .modal {  
     background-image: url("../img/background-item.jpg");  
+    background-color: #f6f3f0;
+}
+
+.main-content {
+    color: #000000; 
 }
 
 .main-content .button {
@@ -50,6 +56,7 @@ main,
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
     text-decoration: underline;
+    transition: 0.25s;
 }
 
 .breadcrumbs-current {
@@ -80,6 +87,7 @@ main,
 
 .catalog-item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
 }
 
 .catalog-category {
@@ -102,6 +110,7 @@ main,
 .pagination-item a:focus,
 .pagination-item a:active {
     background-color: #663d15;
+    transition: 0.25s;
 }
 
 .pagination-item-current a {
@@ -114,6 +123,7 @@ main,
 .pagination-item-current a:active {
     color: #000000;
     background-color: #ffffff;
+    transition: 0.25s;
 }
 
 
@@ -135,6 +145,7 @@ main,
 .button:focus,
 .button:active {
     background-color: #663d15;
+    transition: 0.25s;
 }
 
 .footer-page {
@@ -159,6 +170,7 @@ main,
 .footer-copyright .button:focus {
     color: #000000;
     background-color: #ffffff;
+    transition: 0.25s;
 }
 
 .restore{
@@ -169,6 +181,7 @@ main,
 .restore:hover,
 .restore:focus {
     text-decoration: none;
+    transition: 0.25s;
 }
 
 .login-form input[type="text"],
@@ -182,11 +195,13 @@ main,
 
 .login-form input:focus {
     border-color: #663d15;
+    transition: 0.25s;
 }
 
 .login-checkbox:hover,
 .login-checkbox:focus {
     color: #663d15;
+    transition: 0.25s;
 }
 
 .product-photo-preview {

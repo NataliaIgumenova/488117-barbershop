@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Барбершоп каталог</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -14,7 +15,7 @@
                     <a class="header-logo" href="index.html">
                         <img src="img/logo.svg" alt="Главная" width="111" height="24">
                     </a>
-                    <ul>
+                    <ul class="list">
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Прайс лист</a></li>
@@ -22,7 +23,7 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <ul class="header-login">
+                <ul class="header-login list">
                     <li><a href="#">Вход</a></li>
                 </ul>
             </div>
@@ -30,7 +31,7 @@
 
         <main class="main-content container">
             <h1 class="title-page">Средства для ухода</h1>
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs list">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="barbershop-shop.html">Магазин</a></li>                   
                 <li class="breadcrumbs-current">Средства для ухода</li>
@@ -41,7 +42,7 @@
                     <form class="filter" method="get" action="https://echo.htmlacademia.ru">
                         <fieldset>
                             <legend  class="title-small">Производители:</legend>
-                            <ul>
+                            <ul class="list">
                                 <li class="filter-option">
                                     <input class="filter-input filter-input-checkbox" type="checkbox" value="baxter" id="baxter" name="manufacturers[]" checked>
                                     <label for="baxter">Baxter of California</label>
@@ -70,7 +71,7 @@
                         </fieldset>
                         <fieldset>
                             <legend class="title-small">Группы товаров:</legend>
-                            <ul>
+                            <ul class="list">
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="shaving">
                                     <label for="shaving">Бритвенные принадлежности</label>
@@ -91,7 +92,7 @@
 
                 <section class="catalog">
                     <h2 class="visibilitye-hidden">Список средств для ухода</h2>
-                    <ul class="catalog-list">
+                    <ul class="catalog-list list">
                         <li class="catalog-item">
                             <a href="catalog-item.html">
                                 <h3>
@@ -189,7 +190,7 @@
                         </li>
                     </ul>
 
-                    <ul class="pagination-list">
+                    <ul class="pagination-list list">
                         <li class="pagination-item"><a href="#">1</a></li>
                         <li class="pagination-item pagination-item-current"><a>2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
@@ -208,7 +209,7 @@
             </p>
             <div class="footer-social">
                 <b>Давайте жружить!</b>
-                <ul>
+                <ul class="list">
                     <li><a class="social-battom" href="#">Вконтакте</a></li>
                     <li><a class="social-battom" href="#">Фэйсбук</a></li>
                     <li><a class="social-battom" href="#">Инстаграм</a></li>
@@ -230,13 +231,13 @@
                    <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
                 </p>
                 <p class="login-password-info">
-                    <input class="visually-hidden" type="checkbox" name="remember">
-                    Запомните меня
+                    <input class="visually-hidden" type="checkbox" name="remember" value="remember-mi" id="remember-mi">
+                    <label for="remember-mi">Запомните меня</label>
                     <a class="restore" href="#">Я забыл пароль!</a>
                 </p>
                 <button class="button" type="submit">Войти</button>
             </form>
-            <button name="close" type="button" class="btn"><span class="btn-close visibility-hidden">Закрыть</span></button>
+            <button name="close" type="button" class="btn" aria-label="Закрыть"></button>
         </section>
     </body>
 </html>
